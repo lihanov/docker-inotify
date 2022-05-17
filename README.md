@@ -83,6 +83,7 @@ The following section describes how to configure the watch process.
 
 #### Docker-compose
 
+```yaml
 version: "3"
 services:
   inotify:
@@ -95,3 +96,4 @@ services:
       INOTIFY_TARGET: "/data/nginx"
       INOTIFY_SCRIPT: "/data/script.sh"
       INOTIFY_CFG_RECURSIVE: "true"
+```
