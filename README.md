@@ -89,7 +89,7 @@ services:
   inotify:
     image:  'lihanov/inotify:latest'
     restart: unless-stopped
-    name:   'inotify'
+    container_name:   'inotify'
     volumes:
       - /data:/data
     environment:
