@@ -6,7 +6,8 @@ RUN apk add -U \
         inotify-tools \
         netcat-openbsd \
         net-tools \
-        wget
+        wget \
+        rsync
 
 COPY scripts/ /
 COPY docker-entrypoint.sh /docker-entrypoint.sh
